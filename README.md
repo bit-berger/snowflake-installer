@@ -14,7 +14,7 @@ apt install wget
 
 Get the install script
 ```
-https://raw.githubusercontent.com/bit-berger/snowflake-installer/refs/heads/main/scripts/install_snowflake.sh
+wget https://raw.githubusercontent.com/bit-berger/snowflake-installer/refs/heads/main/scripts/install_snowflake.sh
 ```
 
 Execute the install script
