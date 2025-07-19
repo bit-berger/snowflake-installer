@@ -17,7 +17,7 @@ go build -C snowflake/proxy
 sudo mv snowflake/proxy/proxy /opt/
 
 # autostart with systemd and seperate user
-wget https://raw.github.com/bit-berger/snowflake-installer/systemd/systemd.service
+wget https://raw.githubusercontent.com/bit-berger/snowflake-installer/refs/heads/main/systemd/snowflake.service
 mv snowflake.service /etc/systemd/system
 sudo useradd snowflake
 sudo systemctl enable snowflake.service
