@@ -8,13 +8,14 @@ sudo apt autoremove -y
 sudo apt autoclean -y
 
 # required tools for compiling
+sudo apt install wget -y
 sudo apt install git -y
 sudo apt install golang -y
 
 # clone git repo and compile
 git clone https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake.git
 go build -C snowflake/proxy
-sudo mv snowflake/proxy/proxy /opt/
+sudo mv snowflake/proxy/proxy /opt
 
 # autostart with systemd and seperate user
 wget https://raw.githubusercontent.com/bit-berger/snowflake-installer/refs/heads/main/systemd/snowflake.service
