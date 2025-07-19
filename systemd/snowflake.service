@@ -1,0 +1,12 @@
+[Unit]
+Description=Snowflak Proxy
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/proxy
+User=snowflake
+Group=snowflake
+
+[Install]
+WantedBy=multi-user.target
