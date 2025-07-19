@@ -5,6 +5,7 @@ After=network-online.target
 [Service]
 Type=simple
 ExecStart=/opt/proxy
+Restart=always
 User=snowflake
 Group=snowflake
 
