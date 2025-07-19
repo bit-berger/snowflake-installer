@@ -1,7 +1,7 @@
 ## Snowflake-Installer
 
 
-### How-To
+### How-To: Install snowflake proxy
 Become sudo user
 ```
 sudo su
@@ -14,7 +14,7 @@ apt install wget
 
 Get the install script
 ```
-wget https://raw.githubusercontent.com/bit-berger/snowflake-installer/refs/heads/main/install_snowflake.sh
+https://raw.githubusercontent.com/bit-berger/snowflake-installer/refs/heads/main/scripts/install_snowflake.sh
 ```
 
 Execute the install script
