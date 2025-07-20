@@ -37,7 +37,7 @@ sudo systemctl status snowflake.service
 ```
 
 ## Control the proxy
-Temporarily start/stop the service
+Temporarily start/stop the proxy
 ```
 sudo systemctl start snowflake.service
 sudo systemctl stop snowflake.service
