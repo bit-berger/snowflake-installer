@@ -37,25 +37,18 @@ sudo systemctl status snowflake.service
 ```
 
 ## Control the proxy
-Temporarily stop the service
+Temporarily start/stop the service
 ```
+sudo systemctl start snowflake.service
 sudo systemctl stop snowflake.service
 ```
 
-Start it again
+Enable/Disable the proxy
 ```
-sudo systemctl start snowflake.service
-```
-
-Disable it
-```
-sudo systemctl start snowflake.service
+sudo systemctl enable snowflake.service
+sudo systemctl disable snowflake.service
 ```
 
-Enable it
-```
-sudo systemctl start snowflake.service
-```
 Manual update
 ```
 sudo bash /opt/update_snowflake.sh
