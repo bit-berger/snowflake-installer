@@ -23,3 +23,8 @@ mv snowflake.service /etc/systemd/system
 sudo useradd snowflake
 sudo systemctl enable snowflake.service
 sudo systemctl start snowflake.service
+
+# update
+wget https://raw.githubusercontent.com/bit-berger/snowflake-installer/refs/heads/main/scripts/update_snowflake.sh
+mv update_snowflake.sh /opt
+sudo chmod +x /opt/update_snowflake.sh
