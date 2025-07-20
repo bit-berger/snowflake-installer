@@ -1,7 +1,8 @@
 #! /bin/bash
-# updateing the proxy by compiling newer versions
+#updateing the proxy by compiling newer versions
+#https://github.com/bit-berger/snowflake-installer
 
-# update system
+#update system
 apt update
 sudo apt upgrade -y
 sudo apt autoremove -y
