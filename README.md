@@ -1,7 +1,16 @@
-## Snowflake-Installer
+# Snowflake-Installer
+A script to install a snowflake proxy
 
+## About
+What the script does:
+- Build the standalone snowflake proxy from source
+- Create a systemd service unit
+- Automaticly update the proxy via systemd and a script (currently not working)
 
-### How-To: Install snowflake proxy
+## Requirements
+- Debian based Linux server with root access
+
+## How to use
 Become sudo user
 ```
 sudo su
@@ -9,7 +18,7 @@ sudo su
 
 Make sure wget is installed
 ```
-apt install wget
+sudo apt install wget -y
 ```
 
 Get the install script
@@ -21,3 +30,38 @@ Execute the install script
 ```
 bash install_snowflake.sh
 ```
+
+Done! Check if it's working
+```
+sudo systemctl status snowflake.service
+```
+
+## Control the proxy
+Temporarily stop the service
+```
+sudo systemctl stop snowflake.service
+```
+
+Start it again
+```
+sudo systemctl start snowflake.service
+```
+
+Disable it
+```
+sudo systemctl start snowflake.service
+```
+
+Enable it
+```
+sudo systemctl start snowflake.service
+```
+Manual update
+```
+sudo bash /opt/update_snowflake.sh
+```
+
+## Links
+- Snowflake: https://snowflake.torproject.org/
+- TOR-Project: https://www.torproject.org/
+- TOR-Project on Wikipedia: https://en.wikipedia.org/wiki/Tor_(network)
