@@ -5,10 +5,11 @@ A script to install a snowflake proxy
 What the script does:
 - Build the standalone snowflake proxy from source
 - Create a systemd service unit
-- Automaticly update the proxy via systemd and a script (currently not working)
+- Automaticly update the proxy vith systemd timer and a script
+- For better privacy, the proxy uses the STUN server from adminforge.de instead of Google and BlackBerry.
 
 ## Requirements
-- Debian based Linux server with root access
+- Debian based Linux with root access
 
 ## How to use
 Become sudo user
@@ -51,10 +52,16 @@ sudo systemctl disable snowflake.service
 
 Manual update
 ```
-sudo bash /opt/update_snowflake.sh
+sudo bash /opt/snowflake/update_snowflake.sh
+```
+
+Access the log-file
+```
+cat /var/snowflake/snowflake.log
 ```
 
 ## Links
+- STUN-Server: https://adminforge.de/services/stun-server/
 - Snowflake: https://snowflake.torproject.org/
 - TOR-Project: https://www.torproject.org/
 - TOR-Project on Wikipedia: https://en.wikipedia.org/wiki/Tor_(network)
