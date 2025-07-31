@@ -12,7 +12,7 @@ go build -C proxy/
 
 #replace older version
 sudo rm /opt/snowflake/proxy
-sudo mv proxy/proxy /opt/snowflake
+sudo mv snowflake/proxy/proxy /opt/snowflake
 sudo chown snowflake:snowflake /opt/snowflake/proxy
 sudo chmod 0106 /opt/snowflake/proxy
 
