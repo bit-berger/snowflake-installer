@@ -16,7 +16,7 @@ Become sudo user
 sudo su
 ```
 
-Make sure wget is installed
+Install wget
 ```
 sudo apt install wget -y
 ```
@@ -31,7 +31,7 @@ Execute the install script
 bash install_snowflake.sh
 ```
 
-Done! Check if it's working
+Check if the proxy is working
 ```
 sudo systemctl status snowflake.service
 ```

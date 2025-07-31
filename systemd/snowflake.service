@@ -4,7 +4,8 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/opt/proxy
+ExecStartPre=>/var/snowflake/snowflake.log
+ExecStart=/opt/snowflake/proxy -log-local-time -log /var/snowflake/snowflake.log -stun stun:relay.adminforge.de:443,stun:relay2.adminforge.de:443
 Restart=always
 User=snowflake
 Group=snowflake
