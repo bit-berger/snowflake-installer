@@ -6,13 +6,13 @@
 sudo systemctl stop snowflake.service
 
 #pull git repo and compile
-cd /home/root/
+cd /root/snowflake
 git pull https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake.git
-go build -C snowflake/proxy
+go build -C proxy/
 
 #replace older version
 sudo rm /opt/snowflake/proxy
-sudo mv snowflake/proxy/proxy /opt/snowflake
+sudo mv proxy/proxy /opt/snowflake
 sudo chown snowflake:snowflake /opt/snowflake/proxy
 sudo chmod 0106 /opt/snowflake/proxy
 
