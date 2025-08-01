@@ -29,7 +29,7 @@ wget https://raw.githubusercontent.com/bit-berger/snowflake-installer/refs/heads
 
 Execute the install script
 ```
-bash install_snowflake.sh
+bash snowflake_install.sh
 ```
 
 Check if the proxy is working
