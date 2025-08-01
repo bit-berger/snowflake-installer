@@ -24,7 +24,7 @@ sudo apt install wget -y
 
 Get the install script
 ```
-wget https://raw.githubusercontent.com/bit-berger/snowflake-installer/refs/heads/main/scripts/install_snowflake.sh
+wget https://raw.githubusercontent.com/bit-berger/snowflake-installer/refs/heads/main/scripts/snowflake_install.sh
 ```
 
 Execute the install script
@@ -52,7 +52,7 @@ sudo systemctl disable snowflake.service
 
 Manual update
 ```
-sudo bash /opt/snowflake/update_snowflake.sh
+sudo bash /opt/snowflake/snowflake_update.sh
 ```
 
 Access the log-file
