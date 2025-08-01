@@ -55,7 +55,7 @@ Manual update
 sudo bash /opt/snowflake/snowflake_update.sh
 ```
 
-Access the log-file
+View the log-file
 ```
 cat /var/snowflake/snowflake.log
 ```
