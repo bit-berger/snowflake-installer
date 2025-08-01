@@ -2,4 +2,4 @@
 Description=Snowflake Proxy Update start
 
 [Service]
-ExecStart=/opt/snowflake/update_snowflake.sh
+ExecStart=/opt/snowflake/snowflake_update.sh
