@@ -2,7 +2,7 @@
 Description=Snowflake Proxy Update Timer
 
 [Timer]
-OnCalendar=Mon-Fri *-*-* 01:00:00
+OnCalendar=Mon-Sun *-*-* 01:00:00
 Unit=snowflake_update.service
 
 [Install]
